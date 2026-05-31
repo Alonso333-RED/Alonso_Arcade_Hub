@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="GameMetadata" format=3 uid="uid://cuw2f0r7jm247"]
+
+[ext_resource type="Script" uid="uid://b2qec53ja0s4a" path="res://games_listing_engine/game_metadata.gd" id="1_dqpy1"]
+
+[resource]
+script = ExtResource("1_dqpy1")
+name = "Number Guessing"
+description = "Simple game where you try to find a randomly generated secret number. After each guess, you'll receive hints to help you get closer to the correct answer."
+preview = "res://games/number_guessing/images/background.jpg"
+scene = "res://games/number_guessing/NumberGuessing.tscn"
+metadata/_custom_type_script = "uid://b2qec53ja0s4a"

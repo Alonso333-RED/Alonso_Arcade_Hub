@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="GameMetadata" format=3 uid="uid://b81phqn3huv57"]
+
+[ext_resource type="Script" uid="uid://b2qec53ja0s4a" path="res://games_listing_engine/game_metadata.gd" id="1_jfsrp"]
+
+[resource]
+script = ExtResource("1_jfsrp")
+name = "test3"
+description = "YgS&Be#B^pH4qdwHG$UNv9P#WWB$E8NEPccxQMCu!&JG9w9cdn2mAn%6cw$A^DDjdPKkKTsSZK6R4QufHQYsjx3mPLZ&hprq8ucNtHhwioSoUUeYiYSCMZojBTXSdRBu NEMN6Eaxruii!GXWyaTTuQc%gSxKrkHtvw*ZeB#jGkfiQjx^gRy@7XFMxz$8&gsniMiyb9i5U85vV!kBn3A&rL6Xo9a*tJBBGX8c$Wz3QWJCRX2c76yBRuqajqE48TE2 u9L9v8G6AfHAFi3JtZ@SUdSgi#CxgPWsd4Yz$kcfdWEqgEJ3ABY!nQ8x#gMfXe33Y$dQD#2RKGdL2Bspf%k2YizokFefn7uqomjZjhvj!*6rPM7Gg$qo@GP*vWdnv$ey"
+preview = "res://games/Redinia(16.10.2024).png"
+scene = "res://MainMenu/MainMenu.tscn"
+metadata/_custom_type_script = "uid://b2qec53ja0s4a"

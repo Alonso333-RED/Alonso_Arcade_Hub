@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="GameMetadata" format=3 uid="uid://bjcy13o8lvybb"]
+
+[ext_resource type="Script" uid="uid://b2qec53ja0s4a" path="res://games_listing_engine/game_metadata.gd" id="1_43ech"]
+
+[resource]
+script = ExtResource("1_43ech")
+name = "Alonso's Arcade Hub"
+description = "This is my little personal arcade where I build simple games just for experimenting and having fun. Nothing fancy—just enjoy whatever you feel like playing."
+preview = "res://images/icon_750px.png"
+scene = "res://MainMenu/MainMenu.tscn"
+metadata/_custom_type_script = "uid://b2qec53ja0s4a"
