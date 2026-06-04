@@ -6,6 +6,6 @@
 script = ExtResource("1_dqpy1")
 name = "Number Guessing"
 description = "Simple game where you try to find a randomly generated secret number. After each guess, you'll receive hints to help you get closer to the correct answer."
-preview = "res://games/number_guessing/images/background.jpg"
+preview = "res://games/number_guessing/background.jpg"
 scene = "res://games/number_guessing/NumberGuessing.tscn"
 metadata/_custom_type_script = "uid://b2qec53ja0s4a"
