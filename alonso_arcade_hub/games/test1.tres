@@ -1,9 +1,0 @@
-[gd_resource type="Resource" script_class="GameMetadata" format=3 uid="uid://dxub2j3gop8sb"]
-
-[ext_resource type="Script" uid="uid://b2qec53ja0s4a" path="res://games_listing_engine/game_metadata.gd" id="1_0ixfh"]
-
-[resource]
-script = ExtResource("1_0ixfh")
-name = "test1"
-preview = "res://games/Estrella y Cuásar.jpg"
-metadata/_custom_type_script = "uid://b2qec53ja0s4a"

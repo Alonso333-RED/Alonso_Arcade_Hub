@@ -4,13 +4,10 @@
 [ext_resource type="Script" uid="uid://rcq4ewy2dbpu" path="res://games_listing_engine/game_list.gd" id="2_61r4p"]
 [ext_resource type="Resource" uid="uid://bjcy13o8lvybb" path="res://games_listing_engine/self_project.tres" id="2_v5o3l"]
 [ext_resource type="Resource" uid="uid://cuw2f0r7jm247" path="res://games/number_guessing/number_guessing.tres" id="3_jir47"]
-[ext_resource type="Resource" uid="uid://tuff2gjrddc4" path="res://games/test0.tres" id="3_v5o3l"]
 [ext_resource type="Resource" uid="uid://c15q285myd1xk" path="res://games/tictactoe/tictactoe.tres" id="4_emsiw"]
-[ext_resource type="Resource" uid="uid://dxub2j3gop8sb" path="res://games/test1.tres" id="4_er7yi"]
-[ext_resource type="Resource" uid="uid://pbjlckkkqpdn" path="res://games/test2.tres" id="5_jir47"]
-[ext_resource type="Resource" uid="uid://b81phqn3huv57" path="res://games/test3.tres" id="6_emsiw"]
+[ext_resource type="Resource" uid="uid://b0ry58ic1ydjy" path="res://games/stroop_colors/stroop_colors.tres" id="5_0ynhu"]
 
 [resource]
 script = ExtResource("2_61r4p")
-games = Array[ExtResource("1_nnltr")]([ExtResource("2_v5o3l"), ExtResource("3_jir47"), ExtResource("4_emsiw"), ExtResource("3_v5o3l"), ExtResource("4_er7yi"), ExtResource("5_jir47"), ExtResource("6_emsiw")])
+games = Array[ExtResource("1_nnltr")]([ExtResource("2_v5o3l"), ExtResource("3_jir47"), ExtResource("4_emsiw"), ExtResource("5_0ynhu")])
 metadata/_custom_type_script = "uid://rcq4ewy2dbpu"
