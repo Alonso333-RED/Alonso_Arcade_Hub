@@ -1,0 +1,60 @@
+[gd_scene format=3 uid="uid://b4chu3c2khqro"]
+
+[ext_resource type="Script" uid="uid://cigrsqbly2ljx" path="res://games/tankecitos/tankecitos.gd" id="1_4wig1"]
+[ext_resource type="PackedScene" uid="uid://lcqtcinsp8ty" path="res://utils/uis/FourJoysticksUi.tscn" id="1_k5eef"]
+[ext_resource type="PackedScene" uid="uid://dt6ej401urer5" path="res://games/tankecitos/tank/Tank.tscn" id="2_3nghj"]
+[ext_resource type="Resource" uid="uid://0n040xhxwrrn" path="res://players/player1.tres" id="3_6i4ft"]
+[ext_resource type="Resource" uid="uid://doh6ibqeuuxf2" path="res://players/player2.tres" id="3_kjijf"]
+[ext_resource type="Resource" uid="uid://ctftdhvhx6ci1" path="res://players/player3.tres" id="4_7arrc"]
+[ext_resource type="Resource" uid="uid://dqdl1sx61p6w4" path="res://players/player4.tres" id="5_4wig1"]
+
+[node name="Tankecitos" type="Node2D" unique_id=226391540]
+script = ExtResource("1_4wig1")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=936688897]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -1000.0
+offset_top = -500.0
+offset_right = 1000.0
+offset_bottom = 500.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="." unique_id=1616813612]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -500.0
+offset_top = -500.0
+offset_right = 500.0
+offset_bottom = 500.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.101960786, 0.101960786, 0.101960786, 1)
+
+[node name="Tank1" parent="." unique_id=1542082512 instance=ExtResource("2_3nghj")]
+position = Vector2(-400, -400)
+player = ExtResource("3_6i4ft")
+
+[node name="Tank2" parent="." unique_id=501174338 instance=ExtResource("2_3nghj")]
+position = Vector2(400, 400)
+player = ExtResource("3_kjijf")
+
+[node name="Tank3" parent="." unique_id=2105305588 instance=ExtResource("2_3nghj")]
+position = Vector2(-400, 400)
+player = ExtResource("4_7arrc")
+
+[node name="Tank4" parent="." unique_id=1942844810 instance=ExtResource("2_3nghj")]
+position = Vector2(400, -400)
+player = ExtResource("5_4wig1")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1306016887]
+
+[node name="FourJoysticksUi" parent="." unique_id=6814068 instance=ExtResource("1_k5eef")]
