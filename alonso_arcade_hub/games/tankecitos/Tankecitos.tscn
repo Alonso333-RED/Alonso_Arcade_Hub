@@ -3,7 +3,6 @@
 [ext_resource type="Script" uid="uid://cigrsqbly2ljx" path="res://games/tankecitos/tankecitos.gd" id="1_4wig1"]
 [ext_resource type="PackedScene" uid="uid://lcqtcinsp8ty" path="res://utils/uis/FourJoysticksUi.tscn" id="1_k5eef"]
 [ext_resource type="PackedScene" uid="uid://dt6ej401urer5" path="res://games/tankecitos/tank/Tank.tscn" id="2_3nghj"]
-[ext_resource type="Resource" uid="uid://0n040xhxwrrn" path="res://players/player1.tres" id="3_6i4ft"]
 [ext_resource type="Resource" uid="uid://doh6ibqeuuxf2" path="res://players/player2.tres" id="3_kjijf"]
 [ext_resource type="Resource" uid="uid://ctftdhvhx6ci1" path="res://players/player3.tres" id="4_7arrc"]
 [ext_resource type="Resource" uid="uid://dqdl1sx61p6w4" path="res://players/player4.tres" id="5_4wig1"]
@@ -41,14 +40,15 @@ color = Color(0.101960786, 0.101960786, 0.101960786, 1)
 
 [node name="Tank1" parent="." unique_id=1542082512 instance=ExtResource("2_3nghj")]
 position = Vector2(-400, -400)
-player = ExtResource("3_6i4ft")
 
 [node name="Tank2" parent="." unique_id=501174338 instance=ExtResource("2_3nghj")]
 position = Vector2(400, 400)
+rotation = 3.1415927
 player = ExtResource("3_kjijf")
 
 [node name="Tank3" parent="." unique_id=2105305588 instance=ExtResource("2_3nghj")]
 position = Vector2(-400, 400)
+rotation = 3.1415927
 player = ExtResource("4_7arrc")
 
 [node name="Tank4" parent="." unique_id=1942844810 instance=ExtResource("2_3nghj")]

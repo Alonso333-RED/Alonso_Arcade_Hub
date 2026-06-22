@@ -21,6 +21,7 @@ static func get_movement_vector(
 	if Input.is_action_pressed(prefix + "_up"):
 		keyboard_dir.y -= 1
 
+
 	if joystick:
 		var joystick_dir = joystick.get_value()
 
