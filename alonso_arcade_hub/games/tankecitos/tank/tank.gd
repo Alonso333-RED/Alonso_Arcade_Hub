@@ -1,11 +1,13 @@
 extends CharacterBody2D
 
-var max_hp = 1000
+var max_hp = 4
 var hp = max_hp
 var speed = 250
 
 var had_input := false
 var can_shoot := true
+
+var dead := false
 
 @export var player: PlayerMetadata
 @export var bullet_scene: PackedScene
@@ -13,9 +15,12 @@ var can_shoot := true
 func _ready():
 	$chasis.modulate = player.color
 	$turret.modulate = player.color
+	$hp_bar.value = hp
 
 @warning_ignore("unused_parameter")
 func _physics_process(delta):
+	if dead:
+		return
 	var direction = Input.get_vector(
 		player.prefix + "_left",
 		player.prefix + "_right",
@@ -47,12 +52,33 @@ func shoot():
 	can_shoot = false
 	
 	var bullet = bullet_scene.instantiate()
-	
-	get_parent().add_child(bullet)
-	
+
 	bullet.global_position = $turret/Muzzle.global_position
 	bullet.global_rotation = $turret.global_rotation
-	
+
+	get_parent().add_child(bullet)
+
 	await get_tree().create_timer(1.0).timeout
-	
+
 	can_shoot = true
+	
+func take_damage(value):
+	if dead:
+		return
+
+	hp -= value
+	$hp_bar.value = hp
+
+	if hp <= 0:
+		die()
+	
+func die():
+	dead = true
+
+	$turret.visible = false
+	$hp_bar.visible = false
+
+	velocity = Vector2.ZERO
+	get_tree().current_scene.check()
+	
+	

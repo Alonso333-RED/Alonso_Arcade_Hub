@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://lcqtcinsp8ty"]
 
+[ext_resource type="Texture2D" uid="uid://66ek2b5mcr8f" path="res://utils/sprites/reset.png" id="3_wpnbu"]
+[ext_resource type="Script" uid="uid://cvvxd638ya1jl" path="res://utils/reset.gd" id="4_5teda"]
 [ext_resource type="Texture2D" uid="uid://8m4kx86o5qcr" path="res://utils/sprites/go_home.png" id="4_ayo4e"]
 [ext_resource type="Script" uid="uid://cw78ip6uas0xt" path="res://utils/back.gd" id="5_1piie"]
 
@@ -72,6 +74,17 @@ flat = true
 icon_alignment = 1
 expand_icon = true
 script = ExtResource("5_1piie")
+ghost_mode = true
+
+[node name="reset" type="Button" parent="CanvasLayer/CenterContainer/HBoxContainer" unique_id=1623972219]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+icon = ExtResource("3_wpnbu")
+flat = true
+icon_alignment = 1
+expand_icon = true
+script = ExtResource("4_5teda")
 ghost_mode = true
 
 [node name="Control2" type="Control" parent="CanvasLayer/CenterContainer/HBoxContainer" unique_id=584185757]
