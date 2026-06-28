@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://lcqtcinsp8ty"]
 
 [ext_resource type="Texture2D" uid="uid://66ek2b5mcr8f" path="res://utils/sprites/reset.png" id="3_wpnbu"]
-[ext_resource type="Script" uid="uid://cvvxd638ya1jl" path="res://utils/reset.gd" id="4_5teda"]
+[ext_resource type="Script" uid="uid://cvvxd638ya1jl" path="res://utils/buttons/reset.gd" id="4_5teda"]
 [ext_resource type="Texture2D" uid="uid://8m4kx86o5qcr" path="res://utils/sprites/go_home.png" id="4_ayo4e"]
-[ext_resource type="Script" uid="uid://cw78ip6uas0xt" path="res://utils/back.gd" id="5_1piie"]
+[ext_resource type="Script" uid="uid://cw78ip6uas0xt" path="res://utils/buttons/back.gd" id="5_1piie"]
 
 [node name="FourJoysticksUi" type="Control" unique_id=6814068]
 layout_mode = 3

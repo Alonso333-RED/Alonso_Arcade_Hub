@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://w8d43piidas5" path="res://games/number_guessing/number_guessing.gd" id="1_8msbh"]
 [ext_resource type="Texture2D" uid="uid://bm0ivjomqsecd" path="res://games/number_guessing/background.jpg" id="1_wflgv"]
 [ext_resource type="FontFile" uid="uid://gw2bnqjh3qv7" path="res://fonts/Schoolbell-Regular.ttf" id="2_xkndn"]
-[ext_resource type="Script" uid="uid://cw78ip6uas0xt" path="res://utils/back.gd" id="4_8msbh"]
+[ext_resource type="Script" uid="uid://cw78ip6uas0xt" path="res://utils/buttons/back.gd" id="4_8msbh"]
 [ext_resource type="Script" uid="uid://duc25wkd68sa5" path="res://games/number_guessing/check.gd" id="5_8msbh"]
 
 [node name="NumberGuessing" type="Control" unique_id=263887718]

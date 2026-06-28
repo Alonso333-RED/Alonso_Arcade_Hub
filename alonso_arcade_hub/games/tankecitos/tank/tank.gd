@@ -21,12 +21,8 @@ func _ready():
 func _physics_process(delta):
 	if dead:
 		return
-	var direction = Input.get_vector(
-		player.prefix + "_left",
-		player.prefix + "_right",
-		player.prefix + "_up",
-		player.prefix + "_down"
-		)
+		
+	var direction = InputUtils.get_direction(player.prefix)
 		
 	if direction != Vector2.ZERO:
 		$chasis.rotation = direction.angle() + deg_to_rad(90)
@@ -79,6 +75,4 @@ func die():
 	$hp_bar.visible = false
 
 	velocity = Vector2.ZERO
-	get_tree().current_scene.check()
-	
-	
+	get_tree().current_scene.update_alives()

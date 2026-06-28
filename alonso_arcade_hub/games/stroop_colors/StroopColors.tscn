@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://b2538pcu24fvm" path="res://games/stroop_colors/stroop_colors.gd" id="1_pbahq"]
 [ext_resource type="FontFile" uid="uid://d3bb1xocxaabe" path="res://fonts/Doto-VariableFont_ROND,wght.ttf" id="1_wnari"]
-[ext_resource type="Script" uid="uid://cw78ip6uas0xt" path="res://utils/back.gd" id="2_fjrap"]
+[ext_resource type="Script" uid="uid://cw78ip6uas0xt" path="res://utils/buttons/back.gd" id="2_fjrap"]
 
 [node name="Control" type="Control" unique_id=1357368043]
 layout_mode = 3

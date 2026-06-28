@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://dhardubofeab6" path="res://games/tictactoe/tic_tac_toe.gd" id="1_e7i2v"]
 [ext_resource type="FontFile" uid="uid://d3bb1xocxaabe" path="res://fonts/Doto-VariableFont_ROND,wght.ttf" id="1_masdr"]
 [ext_resource type="Script" uid="uid://bjuiptgxjbha7" path="res://games/tictactoe/cell.gd" id="2_e7i2v"]
-[ext_resource type="Script" uid="uid://cw78ip6uas0xt" path="res://utils/back.gd" id="3_8ct07"]
+[ext_resource type="Script" uid="uid://cw78ip6uas0xt" path="res://utils/buttons/back.gd" id="3_8ct07"]
 
 [node name="Control" type="Control" unique_id=1357368043]
 layout_mode = 3
