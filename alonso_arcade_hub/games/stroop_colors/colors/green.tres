@@ -1,9 +1,0 @@
-[gd_resource type="Resource" script_class="ColorMetadata" format=3 uid="uid://dgp3xpy4loi3m"]
-
-[ext_resource type="Script" uid="uid://ca4e3w7r4lh81" path="res://games/stroop_colors/color_metadata.gd" id="1_df5ku"]
-
-[resource]
-script = ExtResource("1_df5ku")
-name = "blue"
-color = Color(0, 0, 1, 1)
-metadata/_custom_type_script = "uid://ca4e3w7r4lh81"

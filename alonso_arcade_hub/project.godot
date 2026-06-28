@@ -24,10 +24,6 @@ window/stretch/mode="viewport"
 window/stretch/aspect="expand"
 window/handheld/orientation=4
 
-[editor_plugins]
-
-enabled=PackedStringArray("res://addons/virtual_joystick_plus/plugin.cfg")
-
 [input]
 
 player1_up={

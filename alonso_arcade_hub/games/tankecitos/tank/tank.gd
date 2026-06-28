@@ -48,7 +48,7 @@ func shoot():
 	can_shoot = false
 	
 	var bullet = bullet_scene.instantiate()
-
+	bullet.player = player
 	bullet.global_position = $turret/Muzzle.global_position
 	bullet.global_rotation = $turret.global_rotation
 

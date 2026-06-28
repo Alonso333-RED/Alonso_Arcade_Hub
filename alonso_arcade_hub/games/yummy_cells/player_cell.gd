@@ -40,3 +40,4 @@ func _physics_process(delta: float) -> void:
 
 func eat_mass(value: int):
 	current_mass += value
+	
