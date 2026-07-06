@@ -2,10 +2,10 @@
 
 [ext_resource type="Script" uid="uid://b1x42xnb0taoq" path="res://games/yummy_cells/yummy_cells.gd" id="1_1bajm"]
 [ext_resource type="PackedScene" uid="uid://lcqtcinsp8ty" path="res://utils/uis/FourJoysticksUi.tscn" id="2_333s5"]
-[ext_resource type="PackedScene" uid="uid://dabfp6n4s2whu" path="res://games/yummy_cells/Mass.tscn" id="2_gcghy"]
+[ext_resource type="PackedScene" uid="uid://dabfp6n4s2whu" path="res://games/yummy_cells/mass/Mass.tscn" id="2_gcghy"]
 [ext_resource type="Resource" uid="uid://0n040xhxwrrn" path="res://players/player1.tres" id="3_j2atn"]
 [ext_resource type="PackedScene" uid="uid://dpg8qwkies8gy" path="res://utils/world/Wall.tscn" id="3_smj7l"]
-[ext_resource type="PackedScene" uid="uid://dxb1ao32308st" path="res://games/yummy_cells/PlayerCell.tscn" id="4_333s5"]
+[ext_resource type="PackedScene" uid="uid://dxb1ao32308st" path="res://games/yummy_cells/player_cell/PlayerCell.tscn" id="4_333s5"]
 [ext_resource type="Resource" uid="uid://doh6ibqeuuxf2" path="res://players/player2.tres" id="4_dsusr"]
 [ext_resource type="Resource" uid="uid://ctftdhvhx6ci1" path="res://players/player3.tres" id="5_gcghy"]
 [ext_resource type="Resource" uid="uid://dqdl1sx61p6w4" path="res://players/player4.tres" id="6_sx4y3"]

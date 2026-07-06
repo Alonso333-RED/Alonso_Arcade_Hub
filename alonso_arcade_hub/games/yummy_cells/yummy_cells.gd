@@ -4,7 +4,13 @@ extends Node2D
 @export var spawn_range := Vector2(1000, 500)
 
 var masses := 0
+var alives = 4
 
+func one_left():
+	alives -= 1
+	if alives < 2:
+		get_tree().reload_current_scene()
+			
 func spawn_mass():
 	var mass = mass_scene.instantiate()
 

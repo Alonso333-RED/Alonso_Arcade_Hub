@@ -40,4 +40,10 @@ func _physics_process(delta: float) -> void:
 
 func eat_mass(value: int):
 	current_mass += value
-	
+
+func _on_area_2d_body_entered(body: Node2D) -> void:
+	if body is PlayerCell:
+		if current_mass > body.current_mass:
+			current_mass += body.current_mass
+			body.queue_free()
+			get_tree().current_scene.one_left()

@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dabfp6n4s2whu"]
 
-[ext_resource type="Script" uid="uid://cqgad3r7tm5ad" path="res://games/yummy_cells/mass.gd" id="1_ch302"]
+[ext_resource type="Script" uid="uid://cqgad3r7tm5ad" path="res://games/yummy_cells/mass/mass.gd" id="1_ch302"]
 [ext_resource type="Texture2D" uid="uid://cpe7hy1lwn5hh" path="res://utils/sprites/circle.png" id="2_fwfnx"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_8ncuf"]
