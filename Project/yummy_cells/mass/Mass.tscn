@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://dabfp6n4s2whu"]
+
+[ext_resource type="Script" uid="uid://cqgad3r7tm5ad" path="res://games/yummy_cells/mass/mass.gd" id="1_ch302"]
+[ext_resource type="Texture2D" uid="uid://cpe7hy1lwn5hh" path="res://utils/sprites/circle.png" id="2_fwfnx"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_8ncuf"]
+radius = 5.0
+
+[node name="Mass" type="Area2D" unique_id=323718255]
+script = ExtResource("1_ch302")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=597023716]
+scale = Vector2(0.01, 0.01)
+texture = ExtResource("2_fwfnx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1349316852]
+shape = SubResource("CircleShape2D_8ncuf")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

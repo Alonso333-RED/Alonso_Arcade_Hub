@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://bru4pf6hd48ng"]
+
+[ext_resource type="Script" uid="uid://7i6sqg3ke306" path="res://games/tankecitos/bullet/bullet.gd" id="1_n3ifn"]
+[ext_resource type="Texture2D" uid="uid://cpe7hy1lwn5hh" path="res://utils/sprites/circle.png" id="2_14j1j"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_i1e7d"]
+radius = 12.5
+
+[node name="Bullet" type="CharacterBody2D" unique_id=595646239]
+script = ExtResource("1_n3ifn")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1456481164]
+scale = Vector2(0.025, 0.025)
+texture = ExtResource("2_14j1j")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1612283826]
+shape = SubResource("CircleShape2D_i1e7d")
+
+[node name="Timer" type="Timer" parent="." unique_id=1606840169]
+wait_time = 4.0
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

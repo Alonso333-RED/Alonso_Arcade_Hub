@@ -1,0 +1,154 @@
+[gd_scene format=3 uid="uid://bug4onm684upe"]
+
+[ext_resource type="Script" uid="uid://dhardubofeab6" path="res://tic_tac_toe.gd" id="1_e7i2v"]
+[ext_resource type="Script" uid="uid://bjuiptgxjbha7" path="res://cell.gd" id="2_e7i2v"]
+
+[node name="Control" type="Control" unique_id=1357368043]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_e7i2v")
+
+[node name="background" type="ColorRect" parent="." unique_id=463434607]
+z_index = -2
+layout_mode = 0
+offset_right = 2000.0
+offset_bottom = 1000.0
+color = Color(0, 0, 0, 1)
+
+[node name="blue" type="ColorRect" parent="." unique_id=764798495]
+z_index = -2
+layout_mode = 0
+offset_right = 500.0
+offset_bottom = 1000.0
+color = Color(0, 0, 0, 1)
+
+[node name="red" type="ColorRect" parent="." unique_id=1205396167]
+z_index = -2
+layout_mode = 0
+offset_left = 1500.0
+offset_right = 2000.0
+offset_bottom = 1000.0
+color = Color(0, 0, 0, 1)
+
+[node name="GridContainer" type="GridContainer" parent="." unique_id=1405000114]
+layout_mode = 0
+offset_right = 2000.0
+offset_bottom = 1000.0
+columns = 3
+
+[node name="BlueContainer" type="GridContainer" parent="GridContainer" unique_id=1815029274]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="score" type="Label" parent="GridContainer/BlueContainer" unique_id=1899839120]
+custom_minimum_size = Vector2(256, 256)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0, 0, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0)
+theme_override_font_sizes/font_size = 256
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Center" type="GridContainer" parent="GridContainer" unique_id=384986232]
+custom_minimum_size = Vector2(1000, 1000)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+columns = 3
+
+[node name="cell" type="Button" parent="GridContainer/Center" unique_id=1945474498]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 256
+icon_alignment = 1
+script = ExtResource("2_e7i2v")
+
+[node name="cell2" type="Button" parent="GridContainer/Center" unique_id=1972157112]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 256
+icon_alignment = 1
+script = ExtResource("2_e7i2v")
+
+[node name="cell3" type="Button" parent="GridContainer/Center" unique_id=433385870]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 256
+icon_alignment = 1
+script = ExtResource("2_e7i2v")
+
+[node name="cell4" type="Button" parent="GridContainer/Center" unique_id=293784231]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 256
+icon_alignment = 1
+script = ExtResource("2_e7i2v")
+
+[node name="cell5" type="Button" parent="GridContainer/Center" unique_id=634462914]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 256
+icon_alignment = 1
+script = ExtResource("2_e7i2v")
+
+[node name="cell6" type="Button" parent="GridContainer/Center" unique_id=1065338134]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 256
+icon_alignment = 1
+script = ExtResource("2_e7i2v")
+
+[node name="cell7" type="Button" parent="GridContainer/Center" unique_id=568494395]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 256
+icon_alignment = 1
+script = ExtResource("2_e7i2v")
+
+[node name="cell8" type="Button" parent="GridContainer/Center" unique_id=1570184459]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 256
+icon_alignment = 1
+script = ExtResource("2_e7i2v")
+
+[node name="cell9" type="Button" parent="GridContainer/Center" unique_id=722562043]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 256
+icon_alignment = 1
+script = ExtResource("2_e7i2v")
+
+[node name="RedContainer" type="GridContainer" parent="GridContainer" unique_id=2110294276]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="score" type="Label" parent="GridContainer/RedContainer" unique_id=967662478]
+custom_minimum_size = Vector2(256, 256)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0)
+theme_override_font_sizes/font_size = 256
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3

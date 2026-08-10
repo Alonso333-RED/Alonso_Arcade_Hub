@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="GameList" format=3 uid="uid://yif6xa4tdcmv"]
+
+[ext_resource type="Script" uid="uid://b2qec53ja0s4a" path="res://games_listing_engine/game_metadata.gd" id="1_nnltr"]
+[ext_resource type="Script" uid="uid://rcq4ewy2dbpu" path="res://games_listing_engine/game_list.gd" id="2_61r4p"]
+[ext_resource type="Resource" uid="uid://bjcy13o8lvybb" path="res://games_listing_engine/self_project.tres" id="2_v5o3l"]
+[ext_resource type="Resource" uid="uid://c15q285myd1xk" path="res://games/tictactoe/tictactoe.tres" id="4_emsiw"]
+[ext_resource type="Resource" uid="uid://bw3iy35vqkwr" path="res://games/tankecitos/tankecitos.tres" id="5_er7yi"]
+[ext_resource type="Resource" uid="uid://13fbew6c7iw5" path="res://games/yummy_cells/yummy_cells.tres" id="7_jir47"]
+
+[resource]
+script = ExtResource("2_61r4p")
+games = Array[ExtResource("1_nnltr")]([ExtResource("2_v5o3l"), ExtResource("4_emsiw"), ExtResource("5_er7yi"), ExtResource("7_jir47")])
+metadata/_custom_type_script = "uid://rcq4ewy2dbpu"

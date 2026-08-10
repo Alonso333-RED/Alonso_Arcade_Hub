@@ -1,0 +1,114 @@
+[gd_scene format=3 uid="uid://lcqtcinsp8ty"]
+
+[ext_resource type="Texture2D" uid="uid://66ek2b5mcr8f" path="res://utils/sprites/reset.png" id="3_wpnbu"]
+[ext_resource type="Script" uid="uid://cvvxd638ya1jl" path="res://utils/buttons/reset.gd" id="4_5teda"]
+
+[node name="FourJoysticksUi" type="Control" unique_id=6814068]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=315793339]
+layout_mode = 0
+offset_left = -1000.0
+offset_top = -500.0
+offset_right = 1000.0
+offset_bottom = 500.0
+color = Color(1, 1, 1, 0)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=565342232]
+follow_viewport_enabled = true
+
+[node name="LeftContainer" type="VBoxContainer" parent="CanvasLayer" unique_id=466860836]
+clip_contents = true
+offset_left = -1000.0
+offset_top = -500.0
+offset_right = -500.0
+offset_bottom = 500.0
+
+[node name="joystick_player1" type="VirtualJoystick" parent="CanvasLayer/LeftContainer" unique_id=2066531903]
+modulate = Color(1, 0, 0, 1)
+layout_mode = 2
+size_flags_vertical = 3
+joystick_size = 375.0
+tip_size = 188.0
+action_left = &"player1_left"
+action_right = &"player1_right"
+action_up = &"player1_up"
+action_down = &"player1_down"
+
+[node name="joystick_player3" type="VirtualJoystick" parent="CanvasLayer/LeftContainer" unique_id=1128036812]
+modulate = Color(0, 1, 0, 1)
+layout_mode = 2
+size_flags_vertical = 3
+joystick_size = 375.0
+tip_size = 188.0
+action_left = &"player3_left"
+action_right = &"player3_right"
+action_up = &"player3_up"
+action_down = &"player3_down"
+
+[node name="CenterContainer" type="VBoxContainer" parent="CanvasLayer" unique_id=1088442548]
+clip_contents = true
+offset_left = -500.0
+offset_top = -500.0
+offset_right = 500.0
+offset_bottom = 500.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/CenterContainer" unique_id=1254036025]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Control" type="Control" parent="CanvasLayer/CenterContainer/HBoxContainer" unique_id=1121243538]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="reset" type="Button" parent="CanvasLayer/CenterContainer/HBoxContainer" unique_id=1623972219]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+icon = ExtResource("3_wpnbu")
+flat = true
+icon_alignment = 1
+expand_icon = true
+script = ExtResource("4_5teda")
+ghost_mode = true
+
+[node name="Control2" type="Control" parent="CanvasLayer/CenterContainer/HBoxContainer" unique_id=584185757]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Control" type="Control" parent="CanvasLayer/CenterContainer" unique_id=2084066026]
+custom_minimum_size = Vector2(0, 750)
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="RightContainer" type="VBoxContainer" parent="CanvasLayer" unique_id=1361966675]
+clip_contents = true
+offset_left = 500.0
+offset_top = -500.0
+offset_right = 1000.0
+offset_bottom = 500.0
+
+[node name="joystick_player4" type="VirtualJoystick" parent="CanvasLayer/RightContainer" unique_id=903947351]
+modulate = Color(1, 1, 0, 1)
+layout_mode = 2
+size_flags_vertical = 3
+joystick_size = 375.0
+tip_size = 188.0
+action_left = &"player4_left"
+action_right = &"player4_right"
+action_up = &"player4_up"
+action_down = &"player4_down"
+
+[node name="joystick_player2" type="VirtualJoystick" parent="CanvasLayer/RightContainer" unique_id=174935130]
+modulate = Color(0, 0, 1, 1)
+layout_mode = 2
+size_flags_vertical = 3
+joystick_size = 375.0
+tip_size = 188.0
+action_left = &"player2_left"
+action_right = &"player2_right"
+action_up = &"player2_up"
+action_down = &"player2_down"

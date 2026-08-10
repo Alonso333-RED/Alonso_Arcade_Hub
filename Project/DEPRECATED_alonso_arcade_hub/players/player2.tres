@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="PlayerMetadata" format=3 uid="uid://doh6ibqeuuxf2"]
+
+[ext_resource type="Script" uid="uid://dglcevasq4lkr" path="res://players/player_metadata.gd" id="1_ovglj"]
+
+[resource]
+script = ExtResource("1_ovglj")
+name = "Player 2"
+color = Color(0, 0, 1, 1)
+prefix = "player2"
+metadata/_custom_type_script = "uid://dglcevasq4lkr"
